@@ -272,75 +272,62 @@ class TelegramXMainScreen extends GetWidget<TelegramXMainController> {
                                                                     width:
                                                                         getSize(57.00),
                                                                     fit: BoxFit.fill))),
-                                                        Padding(
-                                                            padding: EdgeInsets.only(
-                                                                left:
-                                                                    getHorizontalSize(
+                                                        GestureDetector(
+                                                            onTap: () {
+                                                              onTapGroup34();
+                                                            },
+                                                            child: Padding(
+                                                                padding: EdgeInsets.only(
+                                                                    left: getHorizontalSize(
                                                                         6.00),
-                                                                top:
-                                                                    getVerticalSize(
+                                                                    top: getVerticalSize(
                                                                         8.00)),
-                                                            child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .min,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Container(
-                                                                      width: getHorizontalSize(
-                                                                          287.00),
-                                                                      child: Row(
-                                                                          mainAxisAlignment: MainAxisAlignment
-                                                                              .spaceBetween,
-                                                                          crossAxisAlignment: CrossAxisAlignment
-                                                                              .center,
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          children: [
-                                                                            Padding(
-                                                                                padding: EdgeInsets.only(left: getHorizontalSize(6.00)),
-                                                                                child: Text("lbl_emmett_brown".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.textStyleRobotomedium16.copyWith(fontSize: getFontSize(16), height: 1.19))),
-                                                                            Padding(
-                                                                                padding: EdgeInsets.only(top: getVerticalSize(2.00), right: getHorizontalSize(13.00), bottom: getVerticalSize(2.00)),
-                                                                                child: Text("lbl_12_44_am".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.textStyleRobotoregular13.copyWith(fontSize: getFontSize(13), height: 1.15)))
-                                                                          ])),
-                                                                  Container(
-                                                                      width: getHorizontalSize(
-                                                                          143.00),
-                                                                      margin: EdgeInsets.only(
-                                                                          left: getHorizontalSize(
-                                                                              6.00),
-                                                                          top: getVerticalSize(
-                                                                              5.00),
-                                                                          right: getHorizontalSize(
-                                                                              10.00)),
-                                                                      child: Text(
-                                                                          "msg_tomorrow_every"
-                                                                              .tr,
-                                                                          maxLines:
-                                                                              null,
-                                                                          textAlign: TextAlign
-                                                                              .left,
-                                                                          style: AppStyle.textStyleRobotoregular15.copyWith(
-                                                                              fontSize: getFontSize(15),
-                                                                              height: 1.20))),
-                                                                  Container(
-                                                                      height: getVerticalSize(
-                                                                          0.35),
-                                                                      width: getHorizontalSize(
-                                                                          287.00),
-                                                                      margin: EdgeInsets.only(
-                                                                          top: getVerticalSize(
-                                                                              12.00)),
-                                                                      decoration:
-                                                                          BoxDecoration(
-                                                                              color: ColorConstant.bluegray100))
-                                                                ]))
+                                                                child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .min,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .start,
+                                                                    children: [
+                                                                      Container(
+                                                                          width: getHorizontalSize(
+                                                                              287.00),
+                                                                          child: Row(
+                                                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                                                              mainAxisSize: MainAxisSize.max,
+                                                                              children: [
+                                                                                Padding(padding: EdgeInsets.only(left: getHorizontalSize(6.00)), child: Text("lbl_emmett_brown".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.textStyleRobotomedium16.copyWith(fontSize: getFontSize(16), height: 1.19))),
+                                                                                Padding(padding: EdgeInsets.only(top: getVerticalSize(2.00), right: getHorizontalSize(13.00), bottom: getVerticalSize(2.00)), child: Text("lbl_12_44_am".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.textStyleRobotoregular13.copyWith(fontSize: getFontSize(13), height: 1.15)))
+                                                                              ])),
+                                                                      Container(
+                                                                          width: getHorizontalSize(
+                                                                              143.00),
+                                                                          margin: EdgeInsets.only(
+                                                                              left: getHorizontalSize(
+                                                                                  6.00),
+                                                                              top: getVerticalSize(
+                                                                                  5.00),
+                                                                              right: getHorizontalSize(
+                                                                                  10.00)),
+                                                                          child: Text(
+                                                                              "msg_tomorrow_every".tr,
+                                                                              maxLines: null,
+                                                                              textAlign: TextAlign.left,
+                                                                              style: AppStyle.textStyleRobotoregular15.copyWith(fontSize: getFontSize(15), height: 1.20))),
+                                                                      Container(
+                                                                          height: getVerticalSize(
+                                                                              0.35),
+                                                                          width: getHorizontalSize(
+                                                                              287.00),
+                                                                          margin:
+                                                                              EdgeInsets.only(top: getVerticalSize(12.00)),
+                                                                          decoration: BoxDecoration(color: ColorConstant.bluegray100))
+                                                                    ])))
                                                       ])),
                                               Align(
                                                   alignment:
@@ -835,5 +822,9 @@ class TelegramXMainScreen extends GetWidget<TelegramXMainController> {
 
   onTapTxtBufordmaddog() {
     Get.toNamed(AppRoutes.incomingCallInTheMiddleOfAnotherCallScreen);
+  }
+
+  onTapGroup34() {
+    Get.toNamed(AppRoutes.incomingGroupCallNotificationScreen);
   }
 }
